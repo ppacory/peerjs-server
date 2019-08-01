@@ -4,4 +4,4 @@
 nginx -g "daemon off;"
 
 # Run peerjs-server
-/peer-server/bin/peerjs --port "9000" --path "/myapp"
+./peer-server/bin/peerjs --port "9000" --path "/myapp"
