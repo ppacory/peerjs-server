@@ -124,7 +124,7 @@ npm test
 
 You can build this image simply by calling:
 ```bash
-docker build -t peerjs https://github.com/peers/peerjs-server.git
+docker build -t peerjs https://github.com/ppacory/peerjs-server.git
 ```
 
 To run the image execute this:  
