@@ -5,7 +5,7 @@ FROM node:buster
 RUN set -x \
   && apt-get update && apt-get upgrade -y \
   && apt-get -y install nginx
-COPY nginx/* ./var/www/html  
+COPY nginx/* ./var/www/html/  
   
 # install peerjs-server  
 RUN mkdir /peer-server
