@@ -16,6 +16,11 @@ COPY src ./src
 COPY config ./config
 COPY app.json .
 RUN npm install
+
+
+# entrypoint
+COPY entrypoint.sh /usr/bin/
+RUN chmod +x /usr/bin/entrypoint.sh
 EXPOSE 9000 80
 ENTRYPOINT /usr/bin/entrypoint.sh
 
