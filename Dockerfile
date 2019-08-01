@@ -1,4 +1,4 @@
-FROM node:alpine
+FROM node:buster
 RUN mkdir /peer-server
 WORKDIR /peer-server
 COPY bin ./bin
