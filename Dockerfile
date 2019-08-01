@@ -16,6 +16,6 @@ COPY src ./src
 COPY config ./config
 COPY app.json .
 RUN npm install
-EXPOSE 9000
+EXPOSE 9000 80
 ENTRYPOINT ["node", "bin/peerjs"]
 CMD [ "--port", "9000", "--path", "/myapp" ]
