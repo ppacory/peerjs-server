@@ -1,4 +1,13 @@
+# nodejs / debian:Buster 
 FROM node:buster
+
+# install nginx server
+RUN set -x \
+  && apt-get update && apt-get upgrade -y \
+  && apt-get install nginx
+COPY nginx/* ./var/www/html  
+  
+# install peerjs-server  
 RUN mkdir /peer-server
 WORKDIR /peer-server
 COPY bin ./bin
