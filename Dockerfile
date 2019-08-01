@@ -21,7 +21,7 @@ RUN npm install
 # entrypoint
 COPY entrypoint.sh /usr/bin/
 RUN chmod +x /usr/bin/entrypoint.sh
-EXPOSE 9000 80
+EXPOSE 80 9000
 ENTRYPOINT /usr/bin/entrypoint.sh
 
 #ENTRYPOINT ["node", "bin/peerjs"]
