@@ -19,5 +19,3 @@ RUN npm install
 EXPOSE 9000
 ENTRYPOINT ["node", "bin/peerjs"]
 CMD [ "--port", "9000", "--path", "/myapp" ]
-EXPOSE 80
-CMD ["nginx", "-g", "daemon off;"]
